@@ -23,32 +23,28 @@ $( document ).ready(function() {
       var cnet = "C#/.NET";
       var intro = "intro to programming"
 
-      console.log(frontback)
-      console.log(webbiz)
-      console.log(popularity)
-      console.log(operating)
-      console.log(size)
+      console.log(frontback);
+      console.log(webbiz);
+      console.log(popularity);
+      console.log(operating);
+      console.log(size);
       //  separate design condition
       if (frontback === 1) {
         $("#suggestion1").text(css)
-      }
-      // c# condition
+      };
       if (size >= 2 && frontback === 2 && webbiz === 2 && operating === 1 || operating === 3 ) {
         $("#suggestion2").text(cnet)
-        // java condition
       } else if (size <= 2 && operating === 3 && webbiz === 1 && popularity === 1){
         $("#suggestion2").text(java)
-        // ruby condition
       } else if (webbiz === 1 && popularity === 2 && operating === 2 && frontback === 2) {
         $("suggestion2").text(ruby)
-        // php condition
       } else if (frontback === 2 && popularity === 1 && webbiz === 1){
         $("suggestion2").text(php)
       } else {
         $("suggestion2").text(intro)
-      }
-      $("#namesuggest").text(namesuggestion)
-      $("#answer").show()
+      };
+      $("#namesuggest").text(namesuggestion);
+      $("#answer").show();
     console.log("end")
   });
 });
