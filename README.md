@@ -10,12 +10,8 @@ _This is a page designed to pose prospective students simple questions to aid in
 
 ## Setup/Installation Requirements
 
-* _Travel to (insert markdown hidden link to page here)_
+* _Use a browser to travel to https://github.com/Gingerbolt/trackselector/ and open index.html_
 * _The page should be loaded and ready to accept input through any javascript ready web browser_
-
-## Known Bugs
-
-_shouldn't be any, will edit if that changes_
 
 ## Support and contact details
 
