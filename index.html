@@ -17,6 +17,7 @@
           <label for="nameinput">Please enter your name here:</label>
           <input id="nameinput" class="form-control" type="text">
        </div>
+       <form>
        <div class="form-group">
          <label for="companyinput">Preferred company size:</label>
          <select class="form-control" id="companyinput">
@@ -25,6 +26,7 @@
            <option value="1">Small</option>
          </select>
        </div>
+       </form>
        <div class="form-group">
          <label for="osinput">Operating system preference:</label>
          <select multiple class="form-control" id="osinput">
@@ -34,42 +36,63 @@
            <option value="2">Linux</option>
          </select>
        </div>
-       <fieldset class="form-group">
-          <legend>Style preference:</legend>
-          <div class="form-check">
+       <form>
+         <fieldset class="form-group">
+            <legend>Style preference:</legend>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="radio" class="popularinput" name="optionsRadios" value="1" checked>
+                Proven/Popular
+              </label>
+            </div>
+            <div class="form-check">
             <label class="form-check-label">
-              <input type="radio" class="form-check-input" name="optionsRadios" id="proveninput" value="1" checked>
-              Proven/Popular
-            </label>
-          </div>
-          <div class="form-check">
-          <label class="form-check-label">
-              <input type="radio" class="form-check-input" name="optionsRadios" id="hipinput" value="2">
-              New/Hip
-            </label>
-          </div>
-      </fieldset>
-      <fieldset class="form-group" id="webinput">
+                <input type="radio" class="popularinput" name="optionsRadios" value="2">
+                New/Hip
+              </label>
+            </div>
+        </fieldset>
+      </form>
+      <form>
+      <fieldset class="form-group" >
          <legend>Online or offline preference:</legend>
          <div class="form-check">
            <label class="form-check-label">
-             <input type="radio" class="form-check-input" name="optionsRadios" value="1" checked>
+             <input type="radio" class="webinput" name="optionsRadios" value="1" checked>
              Web-based coding
            </label>
          </div>
          <div class="form-check">
          <label class="form-check-label">
-             <input type="radio" class="form-check-input" name="optionsRadios" value="2">
+             <input type="radio" class="webinput" name="optionsRadios" value="2">
              Business-based coding
            </label>
          </div>
      </fieldset>
-
-       <button type="submit" class="btn btn-success">Click here for our suggestions!</button>
-       <div id="answer" class="well">
-         <p>You have made a triangle</p>
-       </div>
      </form>
+     <form>
+     <fieldset class="form-group">
+        <legend>Would you prefer to work on the user interface or back-end systems?:</legend>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="frontinput" name="optionsRadios" value="1" checked>
+            Front end
+          </label>
+        </div>
+        <div class="form-check">
+        <label class="form-check-label">
+            <input type="radio" class="frontinput" name="optionsRadios" value="2">
+            Back end
+          </label>
+        </div>
+    </fieldset>
+     </form>
+     </form>
+       <button id="submitbtn" class="btn btn-success">Click here for our suggestions!</button>
+       <div id="answer" class="well">
+         <p>Well <span id="namesuggest"></span> we suggest that you take <span id="suggestion1"> </span><span id="suggestion2"></span>. Of course we'll all need to learn new languages as time goes on. Learn how to learn!</p>
+       </div>
+
     </div>
 
   </body>
