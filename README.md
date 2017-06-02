@@ -19,7 +19,7 @@ _Please send any bug reports or suggestions to steve@spitz.com . I will respond 
 
 ## Technologies Used
 
-_This page utilizes a baseline of HTML with CSS style additions (made us of bootstrap). Functionality is attained through use of Javascript (made use of Jquery). _
+This page utilizes a baseline of HTML with CSS style additions (making use of bootstrap). Functionality is attained through use of Javascript (made use of Jquery).
 
 ### License
 
