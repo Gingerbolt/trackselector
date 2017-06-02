@@ -11,74 +11,70 @@
     <div class="container">
       <h1 id="Maintitle">Help us guide your future!</h1>
       <form id="everything">
-
-
-       <div class="form-group">
+        <div class="form-group">
           <label for="nameinput">Please enter your name here:</label>
           <input id="nameinput" class="form-control" type="text">
-       </div>
-       <form>
-       <div class="form-group">
-         <label for="companyinput">Preferred company size:</label>
-         <select class="form-control" id="companyinput">
-           <option value="3">Large</option>
-           <option value="2">Medium</option>
-           <option value="1">Small</option>
-         </select>
-       </div>
+        </div>
+         <form>
+           <div class="form-group">
+             <label for="companyinput">Preferred company size:</label>
+             <select class="form-control" id="companyinput">
+               <option value="3">Large</option>
+               <option value="2">Medium</option>
+               <option value="1">Small</option>
+             </select>
+           </div>
+         </form>
+           <div class="form-group">
+             <label for="osinput">Operating system preference:</label>
+             <select multiple class="form-control" id="osinput">
+               <option value="1">Windows</option>
+               <option value="2">OSx</option>
+               <option value="3">Android</option>
+               <option value="2">Linux</option>
+             </select>
+           </div>
+         <form>
+           <div class="form-group">
+             <label for="popularinput">Preferred indie status:</label>
+             <select class="form-control" id="popularinput">
+               <option value="2">You wouldn't have heard of it</option>
+               <option value="1">Very popular</option>
+             </select>
+           </div>
+        </form>
+        <form>
+          <div class="form-group">
+            <label for="webinput">Online or offline?:</label>
+            <select class="form-control" id="webinput">
+              <option value="2">Bid-ness based</option>
+              <option value="1">Web based</option>
+            </select>
+          </div>
        </form>
-       <div class="form-group">
-         <label for="osinput">Operating system preference:</label>
-         <select multiple class="form-control" id="osinput">
-           <option value="1">Windows</option>
-           <option value="2">OSx</option>
-           <option value="3">Android</option>
-           <option value="2">Linux</option>
-         </select>
-       </div>
        <form>
          <div class="form-group">
-           <label for="popularinput">Preferred indie status:</label>
-           <select class="form-control" id="popularinput">
-             <option value="2">You wouldn't have heard of it</option>
-             <option value="1">Very popular</option>
+           <label for="frontinput">Preferred indie status:</label>
+           <select class="form-control" id="frontinput">
+             <option value="2">Back end/functionality</option>
+             <option value="1">Front end/interface</option>
+           </select>
+         </div>
+       </form>
+       <form>
+         <div class="form-group">
+           <label for="experienceinput">Do you have any coding experience?:</label>
+           <select class="form-control" id="experienceinput">
+             <option value="2">Yes</option>
+             <option value="1">No</option>
            </select>
          </div>
       </form>
-      <form>
-        <div class="form-group">
-          <label for="webinput">Online or offline?:</label>
-          <select class="form-control" id="webinput">
-            <option value="2">Bid-ness based</option>
-            <option value="1">Web based</option>
-          </select>
-        </div>
      </form>
-     <form>
-       <div class="form-group">
-         <label for="frontinput">Preferred indie status:</label>
-         <select class="form-control" id="frontinput">
-           <option value="2">Back end/functionality</option>
-           <option value="1">Front end/interface</option>
-         </select>
-       </div>
-     </form>
-     <form>
-       <div class="form-group">
-         <label for="experienceinput">Do you have any coding experience?:</label>
-         <select class="form-control" id="experienceinput">
-           <option value="2">Yes</option>
-           <option value="1">No</option>
-         </select>
-       </div>
-    </form>
-     </form>
-       <button id="submitbtn" class="btn btn-success">Click here for our suggestions!</button>
-       <div id="answer" class="well">
+     <button id="submitbtn" class="btn btn-success">Click here for our suggestions!</button>
+     <div id="answer" class="well">
          <p>Well <span id="namesuggest"></span> we suggest that you take <span id="suggestion1"> </span><span id="suggestion2"></span>. Of course we'll all need to learn new languages as time goes on. Learn how to learn!</p>
-       </div>
-
     </div>
-
+    </div>
   </body>
 </html>
