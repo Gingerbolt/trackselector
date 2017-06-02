@@ -2,9 +2,7 @@ $( document ).ready(function() {
   console.log("ready");
     $("#submitbtn").click(function(){
       console.log("clicked")
-      .submit(function(event){
-        event.preventDefault()
-        console.log("submitted")
+
 
       // var suggestion1 =
       // var suggestion2 =
@@ -25,10 +23,10 @@ $( document ).ready(function() {
         $("#suggestion1").text(css)
       }
       // c# condition
-      if (size >== 2 && frontback === 2 && webbiz === 2 && operating === 1 || operating === 3 ) {
+      if (size >= 2 && frontback === 2 && webbiz === 2 && operating === 1 || operating === 3 ) {
         $("#suggestion2").text(cnet)
         // java condition
-      } else if (size <== 2 && operating === 3 && webbiz === 1 && popularity === 1){
+      } else if (size <= 2 && operating === 3 && webbiz === 1 && popularity === 1){
         $("#suggestion2").text(java)
       }
 
@@ -43,6 +41,6 @@ $( document ).ready(function() {
 
 
       $("#namesuggest").text(namesuggestion)
-      });
+    console.log("end")
   });
 });
