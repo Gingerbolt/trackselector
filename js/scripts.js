@@ -9,11 +9,20 @@ $( document ).ready(function() {
       var namesuggestion = $("#nameinput").val();
 
       // Functional/back end variables
-      var frontback = parseInt($(".frontinput").val());
+      var frontback = parseInt($("select#frontinput").val());
       var webbiz = parseInt($("select#webinput").val());
       var popularity = parseInt($("select#popularinput").val());
       var operating = parseInt($("select#osinput").val());
-      var size = parseInt($("#companyinput").val());
+      var size = parseInt($("select#companyinput").val());
+
+      // Output result variables
+      var ruby = "Ruby/Rails";
+      var php = "PHP/Drupal";
+      var java = "Java/Android";
+      var css = "CSS/Design";
+      var cnet = "C#/.NET";
+      var intro = "intro to programming"
+
       console.log(frontback)
       console.log(webbiz)
       console.log(popularity)
@@ -29,19 +38,17 @@ $( document ).ready(function() {
         // java condition
       } else if (size <= 2 && operating === 3 && webbiz === 1 && popularity === 1){
         $("#suggestion2").text(java)
+        // ruby condition
+      } else if (webbiz === 1 && popularity === 2 && operating === 2 && frontback === 2) {
+        $("suggestion2").text(ruby)
+        // php condition
+      } else if (frontback === 2 && popularity === 1 && webbiz === 1){
+        $("suggestion2").text(php)
+      } else {
+        $("suggestion2").text(intro)
       }
-
-      // Output result variables
-      var ruby = "Ruby/Rails";
-      var php = "PHP/Drupal";
-      var java = "Java/Android";
-      var css = "CSS/Design";
-      var cnet = "C#/.NET";
-
-
-
-
       $("#namesuggest").text(namesuggestion)
+      $("#answer").show()
     console.log("end")
   });
 });
