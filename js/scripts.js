@@ -9,11 +9,12 @@ $( document ).ready(function() {
       var namesuggestion = $("#nameinput").val();
 
       // Functional/back end variables
-      var frontback = parseInt($("input.frontinput").val());
-      var webbiz = parseInt($("input.webinput").val());
-      var popularity = parseInt($("input.popularinput").val());
+      var frontback = parseInt($(".frontinput").val());
+      var webbiz = parseInt($("select#webinput").val());
+      var popularity = parseInt($("select#popularinput").val());
       var operating = parseInt($("select#osinput").val());
       var size = parseInt($("#companyinput").val());
+      console.log(frontback)
       console.log(webbiz)
       console.log(popularity)
       console.log(operating)

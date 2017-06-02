@@ -37,55 +37,31 @@
          </select>
        </div>
        <form>
-         <fieldset class="form-group">
-            <legend>Style preference:</legend>
-            <div class="form-check">
-              <label class="form-check-label">
-                <input type="radio" class="popularinput" name="optionsRadios" value="1">
-                Proven/Popular
-              </label>
-            </div>
-            <div class="form-check">
-            <label class="form-check-label">
-                <input type="radio" class="popularinput" name="optionsRadios" value="2">
-                New/Hip
-              </label>
-            </div>
-        </fieldset>
+         <div class="form-group">
+           <label for="popularityinput">Preferred indie status:</label>
+           <select class="form-control" id="popularityinput">
+             <option value="2">You wouldn't have heard of it</option>
+             <option value="1">Very popular</option>
+           </select>
+         </div>
       </form>
       <form>
-      <fieldset class="form-group" >
-         <legend>Online or offline preference:</legend>
-         <div class="form-check">
-           <label class="form-check-label">
-             <input type="radio" class="webinput" name="optionsRadios" value="1">
-             Web-based coding
-           </label>
-         </div>
-         <div class="form-check">
-         <label class="form-check-label">
-             <input type="radio" class="webinput" name="optionsRadios" value="2">
-             Business-based coding
-           </label>
-         </div>
-     </fieldset>
+        <div class="form-group">
+          <label for="webinput">Online or offline?:</label>
+          <select class="form-control" id="webinput">
+            <option value="2">Bid-ness based</option>
+            <option value="1">Web based</option>
+          </select>
+        </div>
      </form>
      <form>
-     <fieldset class="form-group">
-        <legend>Would you prefer to work on the user interface or back-end systems?:</legend>
-        <div class="form-check">
-          <label class="form-check-label">
-            <input type="radio" class="frontinput" name="optionsRadios" value="1">
-            Front end
-          </label>
-        </div>
-        <div class="form-check">
-        <label class="form-check-label">
-            <input type="radio" class="frontinput" name="optionsRadios" value="2">
-            Back end
-          </label>
-        </div>
-    </fieldset>
+       <div class="form-group">
+         <label for="frontinput">Preferred indie status:</label>
+         <select class="form-control" id="frontinput">
+           <option value="2">Back end/functionality</option>
+           <option value="1">Front end/interface</option>
+         </select>
+       </div>
      </form>
      </form>
        <button id="submitbtn" class="btn btn-success">Click here for our suggestions!</button>
