@@ -1,6 +1,4 @@
 $( document ).ready(function() {
-  console.log("ready");
-  // Output result variables
   var ruby = "Ruby/Rails";
   var php = "PHP/Drupal";
   var java = "Java/Android";
@@ -8,14 +6,7 @@ $( document ).ready(function() {
   var cnet = "C#/.NET";
   var intro = "Intro to programming";
     $("#submitbtn").click(function(){
-      console.log("clicked")
-
-
-      // var suggestion1 =
-      // var suggestion2 =
       var namesuggestion = $("#nameinput").val();
-
-      // Functional/back end variables
       var frontback = parseInt($("select#frontinput").val());
       var webbiz = parseInt($("select#webinput").val());
       var popularity = parseInt($("select#popularinput").val());
@@ -23,10 +14,6 @@ $( document ).ready(function() {
       var size = parseInt($("select#companyinput").val());
       var experience =
       parseInt($("select#experienceinput").val());
-
-      console.log(experience);
-
-      //  separate design condition
       if (size === 3){
         $("#suggestion2").text(cnet)
       };
@@ -39,7 +26,6 @@ $( document ).ready(function() {
       if (popularity === 1 && size >= 2){
         $("suggestion2").text(php)
       };
-
       if (frontback === 1){
         $("#suggestion2").prepend(css)
       };
@@ -48,6 +34,5 @@ $( document ).ready(function() {
       };
       $("#namesuggest").text(namesuggestion);
       $("#answer").show();
-    console.log("end")
   });
 });
